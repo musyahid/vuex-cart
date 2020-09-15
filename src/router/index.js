@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Product from "../views/Product.vue";
 
 Vue.use(VueRouter)
 
@@ -17,10 +18,15 @@ const routes = [
         props: true,
         name: "photoDetail",
         component: () =>
-          import(/* webpackChunkName: "Product-list" */ "@/components/Home/photoDetail.vue"),
+          import(/* webpackChunkName: "Product-detail" */ "@/components/Home/photoDetail.vue"),
       },
     ],
-  }
+  },
+  {
+    path: "/product",
+    name: "Product",
+    component: Product,
+  },
 ]
 
 const router = new VueRouter({

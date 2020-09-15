@@ -19,7 +19,7 @@
                             <a href=""><router-link
                             :to="{name:'photoDetail',params:{id:photo.id}}"
                             class="hover:text-red-500"
-                            >DETAIL |</router-link></a>
+                            >DETAIL</router-link></a>
                         </b-card>
                     </div>
                 </b-col>
